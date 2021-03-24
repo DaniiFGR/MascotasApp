@@ -1,22 +1,27 @@
-//IMPORTAR COMPONENTES
+//IMPORTAR LIBS Y COMPONENTES
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
-//CUERPO
+//CUERPO DEL COMPONENTE
+
 const Item = (props) => {
-    return( <View style={styles.estiloVista}>{props.children}</View> );
+    return (<View style={styles.estiloVista}>{props.children}</View>);
 }
 
 //ESTILOS
-const styles={
-    estiloVista:{
-        borderWidth:1,
-        borderColor: 'red',
+const styles = {
+    estiloVista: {
+        borderWidth: 0,
+        // borderColor: 'red',
         borderBottomWidth: 0,
-        shadowColor: 'black',
+        //shadowColor: 'black',
         marginLeft: 5,
         marginRight: 5,
         marginTop: 5,
+        padding: 5,
+        flexDireccion: 'row',
+        justifyContent: 'flex-start',
+        position: 'relative',
     }
 };
 

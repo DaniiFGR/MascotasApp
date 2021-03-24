@@ -1,44 +1,53 @@
 //IMPORTAR LIBS Y COMPONENTES
 
 import React from 'react';
-import {TouchableOpacity, Text, View} from 'react-native';
+import { TouchableOpacity, Text, View } from 'react-native';
 
-//CUERPO
+//CUERPO DEL COMPNENTE
 
-const Button = () => {
-    
-    return(
-        <TouchableOpacity style={styles.estiloBoton}>
+const Button = (props) => {
+
+    return (
+        <TouchableOpacity onPress={props.boton} style={styles.estiloBoton}>
             <Text style={styles.estiloTexto}>Más Información</Text>
         </TouchableOpacity>
-        );
+    );
 }
 
-//ESTILO
-const styles={
-    estiloTexto:{
+//ESTILOS
+const styles = {
+    estiloTexto: {
         textAlign: 'center',
         fontSize: 16,
-        fontWeight: '400',
-        paddingTop: 7,
+        fontWeight: 'bold',
+        paddingTop: 3,
         paddingBottom: 7,
-        color:'blue'
+        marginTop: 4,
+
+        color: '#233549'
     },
-    estiloBoton:{
-  
+    estiloBoton: {
+
         alignSelf: 'stretch',
-        backgroundColor: 'pink',
-        borderWidth: 2,
-        paddingTop: 7,
-        marginTop: 10,
-        marginLeft: 7,
-        marginRight: 7,
-        marginBottom:15
+
+        backgroundColor: 'rgba(255,83,128,0.8)',
+        borderWidth: 0,
+        paddingTop: 2,
+        paddingBottom: 5,
+        marginTop: 5,
+        marginLeft: 90,
+        marginRight: 90,
+        marginBottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 30,
+
+
 
     }
 }
 
-//EXPORTAR
+//EXPORTAR COMPONENTE
 
 export default Button;
 

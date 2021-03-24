@@ -1,19 +1,19 @@
 //IMPORTAR COMPONENTES
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
-//CUERPO
+//CUERPO DEL COMPONENTE
 const ItemSeccion = (props) => {
-return (
-    <View style={styles.estiloVista}>{props.children}</View>
+    return (
+        <View style={styles.estiloVista}>{props.children}</View>
     );
 }
 
 //ESTILOS
-const styles={
-    estiloVista:{
-        borderBottomWidth: 1,
-        borderColor:'blue',
+const styles = {
+    estiloVista: {
+        borderBottomWidth: 0,
+        //borderColor:'blue',
         padding: 5,
         flexDireccion: 'row',
         justifyContent: 'flex-start',
