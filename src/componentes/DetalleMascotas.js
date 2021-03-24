@@ -15,7 +15,9 @@ const DetalleMascotas = (props) => {
         <Item>
             <ItemSeccion>
                 <View style={styles.estiloContenedor}>
-                    <Text style={styles.estiloTexto}>{props.mascotas.id}. {props.mascotas.raza}: {props.mascotas.nombre} </Text>
+                    <Text style={styles.estiloTexto, styles.estiloIR}>{props.mascotas.id}. {props.mascotas.raza}:
+                     <Text style={styles.estiloTexto, styles.estiloN}> {props.mascotas.nombre} </Text></Text>
+
                 </View>
 
             </ItemSeccion>
@@ -57,6 +59,17 @@ const styles = {
         fontSize: 25,
         fontWeigth: '200',
         //textTransform : 'uppercase'
+        margin: 'auto',
+    },
+
+    estiloIR: {
+        fontSize: 21,
+        fontWeight: 'bold',
+        margin: 'auto',
+    },
+    estiloN: {
+        fontSize: 21,
+        fontStyle: 'italic',
         margin: 'auto',
     }
 }
